@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+    <title>Decodificador de textos</title>
+</head>
+<body>
+        <img class="fundo" src="./images/fundo.jpg" alt="">
+    <header>
+        <img src="./images/logo.jpg" alt="">
+        <h1 >Decodificador de textos</h1>
+    </header>
+
+    <main>
+        <div class="container quadros">
+            <div class="apresentacao__esquerda">
+                <textarea class="input" id="input-text" placeholder="Escreva aqui..." cols="30" rows="10"></textarea>
+                <div class="requisitos">
+                    <h5>ATENÇÃO: Apenas letras minúsculas e sem acento.</h5>
+                </div>
+                <div class="btn">
+                    <button id="Criptografar">Criptografar</button>
+                    <button id="Descriptografar">Descriptografar</button>
+                </div>
+            </div>
+            <div class="apresentacao__direita">
+                <textarea class="output" id="output-text" cols="30" rows="10" readonly></textarea>
+                <button id="copia" onclick="copyText()">Copiar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="escrita__rodape">
+               <h3> ©Desenvolvido por Jose Augusto do Nascimento Neto </h3>
+            </div>
+        </div>
+    </footer>
+  
+    <script src="app.js"></script>
+</body>
+</html>

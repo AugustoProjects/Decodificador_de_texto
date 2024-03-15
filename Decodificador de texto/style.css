@@ -1,0 +1,164 @@
+@import "https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.fundo{
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 40px;
+}
+
+header img{
+    position: absolute;
+    left: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100px;
+}
+
+header h1{
+    color: white;
+}
+
+
+.quadros{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+main textarea.input{
+    font-size: 30px;
+    color:black ;
+    width: 600px;
+    height: 400px;
+    padding: 50px;
+    background-color:#98FB98;
+    border: none;
+    border-radius: 35px;
+    box-shadow: -50px -50px 30px rgba(0, 0, 0, 0.2);
+    outline: none;
+    resize: none;
+}
+
+main textarea.input::placeholder{
+    color: black;
+    opacity: 1;
+}
+
+main textarea.input:focus{
+    border: 1px solid #98FB98;
+}
+
+.requisitos h5{
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 20px #A8A6FF;
+}
+
+main textarea.output{
+    font-size: 30px;
+    color: black;
+    width: 450px;
+    height: 600px;
+    padding: 50px;
+    background-color:#98FB98;
+    border-radius: 35px;
+    box-shadow: 50px 50px 30px rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+main textarea.output::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+    opacity: 1;
+}
+
+.btn{
+    margin: 16px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn button{
+    width: 200px;
+    height: 50px;
+    background-color:#00FA9A;
+    border-radius: 16px;
+    border: none;
+}
+
+.btn button:hover{
+    background-color:#9ACD32;
+    ;
+}
+
+.apresentacao__direita {
+    position: relative;
+}
+
+.apresentacao__direita button{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background-color: #00FA9A;
+    border-radius: 16px;
+    border: none;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.apresentacao__direita button:hover{
+    background-color: 	#9ACD32;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width:1100px) {
+    .quadros{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    main textarea.input, main textarea.output{
+        width: 100%;
+    }
+    .requisitos h5{
+        margin: 0;
+        text-align: center;
+    }
+    footer{
+        position: relative;
+
+    }
+}
